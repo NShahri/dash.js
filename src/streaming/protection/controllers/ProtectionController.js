@@ -33,7 +33,7 @@ import Events from '../../../core/events/Events';
 import MediaCapability from '../vo/MediaCapability';
 import KeySystemConfiguration from '../vo/KeySystemConfiguration';
 import FactoryMaker from '../../../core/FactoryMaker';
-import Protection from '../Protection';
+import ProtectionEvents from '../ProtectionEvents';
 
 /**
  * @module ProtectionController
@@ -75,7 +75,7 @@ function ProtectionController(config) {
         sessionType = 'temporary';
         robustnessLevel = '';
 
-        Events.extend(Protection.events);
+        Events.extend(ProtectionEvents);
     }
 
     /**
